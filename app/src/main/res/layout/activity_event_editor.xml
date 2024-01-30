@@ -1,0 +1,148 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MainActivity">
+
+    <androidx.appcompat.widget.Toolbar
+        android:layout_width="match_parent"
+        android:layout_height="100dp"
+        android:minHeight="?actionBarSize"
+        android:theme="?actionBarTheme"
+        android:background="@color/red">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Event Detail"
+            android:textSize="35sp"
+            android:textColor="@color/white"
+            android:layout_gravity="center"/>
+
+
+    </androidx.appcompat.widget.Toolbar>
+
+    <!--Adding a TextView -->
+    <TextView
+        android:id="@+id/title"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Title"
+        android:textColor="@color/black"
+        android:padding="8dp"
+        android:textSize="25sp"/>
+
+    <EditText
+        android:id="@+id/eventTitle"
+        android:layout_width="match_parent"
+        android:layout_height="48dp"
+        android:textSize="18sp"
+        android:layout_marginTop="5dp"
+        android:padding="8dp"
+        android:hint="Heading"
+        android:inputType="text"
+        android:drawablePadding="8dp"
+        android:textColor="@color/gray"
+        android:background="@drawable/edittext_border"/>
+
+    <TextView
+        android:id="@+id/description"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Description"
+        android:textColor="@color/black"
+        android:padding="8dp"
+        android:textSize="25sp"/>
+
+    <EditText
+        android:id="@+id/eventDescription"
+        android:layout_width="match_parent"
+        android:layout_height="48dp"
+        android:textSize="18sp"
+        android:layout_marginTop="5dp"
+        android:padding="8dp"
+        android:hint="Detail of event"
+        android:inputType="text"
+        android:drawablePadding="8dp"
+        android:textColor="@color/gray"
+        android:background="@drawable/edittext_border"/>
+
+    <TextView
+        android:id="@+id/Date"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Date"
+        android:textColor="@color/black"
+        android:padding="8dp"
+        android:textSize="25sp"/>
+
+    <EditText
+        android:id="@+id/eventDate"
+        android:layout_width="match_parent"
+        android:layout_height="48dp"
+        android:textSize="18sp"
+        android:layout_marginTop="5dp"
+        android:padding="8dp"
+        android:hint="MM/DD/YYYY"
+        android:inputType="none"
+        android:drawablePadding="8dp"
+        android:textColor="@color/gray"
+        android:background="@drawable/edittext_border"
+        android:focusable="false"
+        android:onClick="showDatePicker"/>
+
+    <TextView
+        android:id="@+id/Time"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Time"
+        android:textColor="@color/black"
+        android:padding="8dp"
+        android:textSize="25sp"/>
+
+    <EditText
+        android:id="@+id/eventTime"
+        android:layout_width="match_parent"
+        android:layout_height="48dp"
+        android:textSize="18sp"
+        android:layout_marginTop="5dp"
+        android:padding="8dp"
+        android:hint="HH:MM"
+        android:inputType="none"
+        android:drawablePadding="8dp"
+        android:textColor="@color/gray"
+        android:background="@drawable/edittext_border"
+        android:focusable="false"
+        android:onClick="showTimePicker"/>
+
+    <Button
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:layout_marginTop="10dp"
+        android:backgroundTint="@color/white"
+        android:onClick="saveEvent"
+        android:text="SAVE"
+        android:textColor="@color/red"
+        android:textSize="25sp"
+        android:textStyle="bold" />
+
+    <Button
+        android:id="@+id/deleteEventButton"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:layout_marginTop="10dp"
+        android:backgroundTint="@color/white"
+        android:onClick="deleteEvent"
+        android:text="DELETE"
+        android:textColor="@color/red"
+        android:textSize="25sp"
+        android:textStyle="bold" />
+
+
+</LinearLayout>

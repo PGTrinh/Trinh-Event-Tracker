@@ -1,0 +1,81 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="100dp"
+    android:padding="15dp">
+
+        <LinearLayout
+            android:layout_height="wrap_content"
+            android:layout_width="match_parent"
+            android:orientation="horizontal"
+            android:baselineAligned="false"
+            tools:ignore="UselessParent">
+
+            <LinearLayout
+                android:layout_height="wrap_content"
+                android:layout_width="0dp"
+                android:layout_weight="1"
+                android:orientation="vertical">
+
+                <TextView
+                    android:layout_height="wrap_content"
+                    android:layout_width="match_parent"
+                    android:id="@+id/CellTitle"
+                    android:background="@color/gray"
+                    android:textStyle="normal"
+                    android:textSize="13sp"
+                    android:textColor="@color/white"
+                    android:padding="5dp"
+                    android:hint="@string/event_template_title"
+                    android:gravity="center_horizontal"/>
+
+                <TextView
+                    android:layout_height="wrap_content"
+                    android:layout_width="match_parent"
+                    android:id="@+id/CellDescription"
+                    android:background="@color/gray"
+                    android:textStyle="normal"
+                    android:textSize="13sp"
+                    android:textColor="@color/white"
+                    android:padding="5dp"
+                    android:hint="@string/event_template_description"
+                    android:gravity="center_horizontal"/>
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_height="wrap_content"
+                android:layout_width="wrap_content"
+                android:orientation="vertical">
+
+                <TextView
+                    android:layout_height="wrap_content"
+                    android:layout_width="match_parent"
+                    android:id="@+id/CellDate"
+                    android:background="@color/gray"
+                    android:textStyle="normal"
+                    android:textSize="13sp"
+                    android:textColor="@color/white"
+                    android:padding="5dp"
+                    android:hint="@string/event_template_date"
+                    android:gravity="center_horizontal"/>
+
+                <TextView
+                    android:layout_height="wrap_content"
+                    android:layout_width="match_parent"
+                    android:id="@+id/CellTime"
+                    android:background="@color/gray"
+                    android:textStyle="normal"
+                    android:textSize="13sp"
+                    android:textColor="@color/white"
+                    android:padding="5dp"
+                    android:hint="@string/event_template_time"
+                    android:gravity="center_horizontal"/>
+
+            </LinearLayout>
+
+        </LinearLayout>
+
+    </LinearLayout>

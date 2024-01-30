@@ -1,0 +1,17 @@
+<resources>
+    <string name="app_name">TrinhEventTracker</string>
+    <string name="settings">Settings</string>
+    <string name="pref_title_SMS">SMS Subscribe</string>
+    <string name="pref_SMS">Allows the application to send SMS alert</string>
+    <string name="event_template_edit_button">Event Edit Button</string>
+    <string name="event_template_date">Event Date</string>
+    <string name="event_template_time">Event Time</string>
+    <string name="event_template_description">Event Description</string>
+    <string name="event_template_title">Event Title</string>
+    <string name="event_template_delete">Event Delete</string>
+    <string name="sms_alert_title">SMS Alert</string>
+    <string name="sms_alert_summary">Enable or disable SMS alerts</string>
+    <string name="sms_alert_enabled_message">SMS alerts are enabled.</string>
+    <string name="sms_alert_disabled_message">SMS alerts are disabled.</string>
+    <string name="alert_sms_message">The app SMS feature requires permission to notify of events.</string>
+</resources>
